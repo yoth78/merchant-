@@ -1,0 +1,5 @@
+package com.omnistore.marketplace;
+
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {}

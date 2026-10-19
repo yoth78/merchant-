@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">OmniMarket</string>
+    <string name="title_activity_main">OmniMarket</string>
+    <string name="package_name">com.omnistore.marketplace</string>
+    <string name="custom_url_scheme">com.omnistore.marketplace</string>
+</resources>
