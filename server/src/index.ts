@@ -16,6 +16,9 @@ app.use(cors({
 
 app.use(express.json());
 
+// Serve static uploads
+app.use('/uploads', express.static('uploads'));
+
 // Initialize seed data on start
 seedInitialData();
 
@@ -27,6 +30,6 @@ app.get('/api/health', (_req, res) => {
 // Mount Marketplace API
 app.use('/api', apiRouter);
 
-app.listen(PORT, () => {
+app.listen(Number(PORT), '0.0.0.0', () => {
   console.log(`[Marketplace API] Server running on http://localhost:${PORT}`);
 });

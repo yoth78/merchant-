@@ -8,8 +8,18 @@ import { OrderController } from '../controllers/order.controller.js';
 import { AdminController } from '../controllers/admin.controller.js';
 import { MiscController } from '../controllers/misc.controller.js';
 import { requireAuth, requireRole } from '../middleware/auth.js';
+import { upload } from '../middleware/upload.js';
 
 const router = Router();
+
+// --- IMAGE UPLOAD ---
+router.post('/upload', requireAuth, upload.single('image'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ message: 'No file uploaded' });
+  }
+  const fileUrl = `/uploads/${req.file.filename}`;
+  res.json({ url: fileUrl });
+});
 
 // --- AUTH ---
 router.post('/auth/register', AuthController.register);

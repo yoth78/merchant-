@@ -9,6 +9,7 @@ export const MerchantLayout: React.FC = () => {
 
   const links = [
     { to: '/merchant', label: 'Overview', icon: LayoutDashboard, end: true },
+    { to: '/merchant/products/new', label: 'Post New Item', icon: Package },
     { to: '/merchant/products', label: 'Products & Inventory', icon: Package },
     { to: '/merchant/orders', label: 'Incoming Orders', icon: ShoppingBag },
     { to: '/merchant/profile', label: 'Store Profile', icon: Store }
