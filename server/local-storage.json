@@ -293,11 +293,11 @@
       "name": "Pro Wireless ANC Headphones",
       "description": "Studio-grade noise cancelling bluetooth headphones with 40h battery.",
       "price": 199.99,
-      "stock": 23,
+      "stock": 22,
       "isActive": true,
       "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
       "createdAt": "2026-10-13T15:43:04.836Z",
-      "updatedAt": "2026-10-19T09:08:27.171Z"
+      "updatedAt": "2026-11-10T09:35:29.361Z"
     },
     {
       "id": "prod-2",
@@ -714,14 +714,6 @@
       "quantity": 1,
       "createdAt": "2026-10-19T09:15:15.038Z",
       "updatedAt": "2026-10-19T09:15:15.038Z"
-    },
-    {
-      "id": "cart-item-1793081615997-505",
-      "cartId": "cart-user-customer-1",
-      "productId": "prod-1",
-      "quantity": 1,
-      "createdAt": "2026-10-27T06:13:35.998Z",
-      "updatedAt": "2026-10-27T06:13:35.998Z"
     }
   ],
   "checkouts": [
@@ -766,6 +758,20 @@
       "deliveryNotes": null,
       "createdAt": "2026-10-19T09:08:27.171Z",
       "updatedAt": "2026-10-19T09:08:27.171Z"
+    },
+    {
+      "id": "chk-1794303329361",
+      "orderNumber": "CHK-2097",
+      "customerId": "user-customer-1",
+      "totalAmount": 199.99,
+      "paymentMethod": "COD",
+      "paymentStatus": "PENDING",
+      "customerName": "Alex Johnson",
+      "customerPhone": "+1 555-0201",
+      "deliveryAddress": "Koye Feche Condominium, Block 90, 4th Floor, House No. 21",
+      "deliveryNotes": null,
+      "createdAt": "2026-11-10T09:35:29.361Z",
+      "updatedAt": "2026-11-10T09:35:29.361Z"
     }
   ],
   "orders": [
@@ -876,6 +882,24 @@
       "deliveryNotes": null,
       "createdAt": "2026-10-19T09:08:27.171Z",
       "updatedAt": "2026-10-19T09:08:27.171Z"
+    },
+    {
+      "id": "ord-1794303329361-merchant-1",
+      "orderNumber": "ORD-2638",
+      "checkoutId": "chk-1794303329361",
+      "customerId": "user-customer-1",
+      "merchantId": "merchant-1",
+      "subtotal": 199.99,
+      "deliveryFee": 0,
+      "totalAmount": 199.99,
+      "status": "PENDING",
+      "paymentStatus": "PENDING",
+      "customerName": "Alex Johnson",
+      "customerPhone": "+1 555-0201",
+      "deliveryAddress": "Koye Feche Condominium, Block 90, 4th Floor, House No. 21",
+      "deliveryNotes": null,
+      "createdAt": "2026-11-10T09:35:29.361Z",
+      "updatedAt": "2026-11-10T09:35:29.361Z"
     }
   ],
   "orderItems": [
@@ -948,6 +972,16 @@
       "quantity": 1,
       "totalPrice": 92,
       "createdAt": "2026-10-19T09:08:27.171Z"
+    },
+    {
+      "id": "item-1794303329361-prod-1",
+      "orderId": "ord-1794303329361-merchant-1",
+      "productId": "prod-1",
+      "productName": "Pro Wireless ANC Headphones",
+      "unitPrice": 199.99,
+      "quantity": 1,
+      "totalPrice": 199.99,
+      "createdAt": "2026-11-10T09:35:29.361Z"
     }
   ],
   "notifications": [
@@ -1040,6 +1074,24 @@
       "isRead": false,
       "linkUrl": "/checkout/chk-1792400907171",
       "createdAt": "2026-10-19T09:08:27.171Z"
+    },
+    {
+      "id": "notif-1794303329361-merchant-1",
+      "userId": "user-merchant-1",
+      "title": "New Order Received",
+      "message": "You have received Order #ORD-2638 (1 items, $199.99)",
+      "isRead": false,
+      "linkUrl": "/merchant/orders/ord-1794303329361-merchant-1",
+      "createdAt": "2026-11-10T09:35:29.361Z"
+    },
+    {
+      "id": "notif-1794303329361-cust",
+      "userId": "user-customer-1",
+      "title": "Checkout Confirmation",
+      "message": "Your checkout #CHK-2097 was placed successfully with 1 merchant order(s).",
+      "isRead": false,
+      "linkUrl": "/checkout/chk-1794303329361",
+      "createdAt": "2026-11-10T09:35:29.361Z"
     }
   ]
 }
