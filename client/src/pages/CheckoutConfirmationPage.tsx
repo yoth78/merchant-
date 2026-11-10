@@ -50,12 +50,18 @@ export const CheckoutConfirmationPage: React.FC = () => {
           Thank you for your purchase, <span className="font-semibold text-gray-900">{checkout.customerName}</span>. Your multi-merchant checkout has been split into individual merchant orders.
         </p>
 
-        <div className="inline-flex items-center space-x-3 bg-gray-50 px-4 py-2 rounded-xl border border-gray-200 text-xs">
-          <span className="text-gray-500">Checkout Session:</span>
-          <span className="font-mono font-bold text-gray-900">#{checkout.orderNumber}</span>
-          <span className="text-gray-300">|</span>
-          <span className="text-gray-500">Total:</span>
-          <span className="font-mono font-bold text-brand-700">${Number(checkout.totalAmount).toFixed(2)}</span>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="inline-flex items-center space-x-3 bg-gray-50 px-4 py-2 rounded-xl border border-gray-200 text-xs">
+            <span className="text-gray-500">Checkout Session:</span>
+            <span className="font-mono font-bold text-gray-900">#{checkout.orderNumber}</span>
+            <span className="text-gray-300">|</span>
+            <span className="text-gray-500">Total:</span>
+            <span className="font-mono font-bold text-brand-700">${Number(checkout.totalAmount).toFixed(2)}</span>
+          </div>
+          <div className="inline-flex items-center space-x-2 bg-emerald-50 text-emerald-900 px-4 py-2 rounded-xl border border-emerald-200 text-xs font-medium">
+            <MapPin className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
+            <span>Condo Delivery: <strong className="font-mono">{checkout.deliveryAddress}</strong></span>
+          </div>
         </div>
       </div>
 

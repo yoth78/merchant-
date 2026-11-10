@@ -160,15 +160,17 @@ export const MerchantOrderDetailPage: React.FC = () => {
 
         {/* Customer & Shipping information */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 text-xs">
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <span className="font-bold text-gray-900 flex items-center">
-              <MapPin className="w-3.5 h-3.5 mr-1 text-gray-400" />
-              Delivery Destination
+              <MapPin className="w-3.5 h-3.5 mr-1 text-brand-600" />
+              Condominium Delivery Destination
             </span>
-            <p className="text-gray-700 font-medium">{order.customerName}</p>
-            <p className="text-gray-600">{order.deliveryAddress}</p>
+            <p className="text-gray-900 font-bold">{order.customerName}</p>
+            <div className="p-2.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl">
+              <p className="text-emerald-950 font-mono font-bold text-xs">{order.deliveryAddress}</p>
+            </div>
             {order.deliveryNotes && (
-              <p className="text-gray-500 italic mt-1">Customer note: {order.deliveryNotes}</p>
+              <p className="text-gray-500 italic text-[11px]">Courier note: {order.deliveryNotes}</p>
             )}
           </div>
 

@@ -240,9 +240,9 @@ export function seedInitialData() {
     paymentMethod: 'COD' as const,
     paymentStatus: 'PENDING' as const,
     customerName: 'Alex Johnson',
-    customerPhone: '+1 555-0201',
-    deliveryAddress: '742 Evergreen Terrace, Springfield, OR',
-    deliveryNotes: 'Please ring the doorbell and leave at front door.',
+    customerPhone: '+251 91 123 4567',
+    deliveryAddress: 'Koye Feche Condominium, Block 90, 4th Floor, House No. 21 (Entrance B)',
+    deliveryNotes: 'Please call on arrival; gate guard will allow entry.',
     createdAt: new Date(Date.now() - 3600 * 1000 * 4), // 4 hours ago
     updatedAt: new Date(Date.now() - 3600 * 1000 * 4)
   };
@@ -259,9 +259,9 @@ export function seedInitialData() {
     status: 'PREPARING' as const,
     paymentStatus: 'PENDING' as const,
     customerName: 'Alex Johnson',
-    customerPhone: '+1 555-0201',
-    deliveryAddress: '742 Evergreen Terrace, Springfield, OR',
-    deliveryNotes: 'Please ring the doorbell and leave at front door.',
+    customerPhone: '+251 91 123 4567',
+    deliveryAddress: 'Koye Feche Condominium, Block 90, 4th Floor, House No. 21 (Entrance B)',
+    deliveryNotes: 'Please call on arrival; gate guard will allow entry.',
     createdAt: new Date(Date.now() - 3600 * 1000 * 4),
     updatedAt: new Date(Date.now() - 3600 * 1000 * 3)
   };
@@ -278,9 +278,9 @@ export function seedInitialData() {
     status: 'ACCEPTED' as const,
     paymentStatus: 'PENDING' as const,
     customerName: 'Alex Johnson',
-    customerPhone: '+1 555-0201',
-    deliveryAddress: '742 Evergreen Terrace, Springfield, OR',
-    deliveryNotes: 'Please ring the doorbell and leave at front door.',
+    customerPhone: '+251 91 123 4567',
+    deliveryAddress: 'Koye Feche Condominium, Block 90, 4th Floor, House No. 21 (Entrance B)',
+    deliveryNotes: 'Please call on arrival; gate guard will allow entry.',
     createdAt: new Date(Date.now() - 3600 * 1000 * 4),
     updatedAt: new Date(Date.now() - 3600 * 1000 * 2)
   };
